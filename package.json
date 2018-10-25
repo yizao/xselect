@@ -1,0 +1,44 @@
+{
+  "name": "selectx",
+  "version": "0.0.1",
+  "description": "Fetch remote data Select component base on Antd Select component.",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "compile": "rm -rf lib && babel -d lib src",
+    "prepare": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yizao/xselect.git"
+  },
+  "keywords": [
+    "react",
+    "antd",
+    "select",
+    "component"
+  ],
+  "author": "soso",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yizao/xselect/issues"
+  },
+  "homepage": "https://github.com/yizao/xselect#readme",
+  "dependencies": {
+    "lodash": "4.17.11",
+    "prop-types": "15.6.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-import": "^1.7.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
