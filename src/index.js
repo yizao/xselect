@@ -10,17 +10,24 @@ export default class XSelect extends PureComponent {
 
   static propTypes = {
     remoteUrl: PropTypes.string.isRequired,
+    customLabelField: PropTypes.string,
+    customeValueField: PropTypes.string,
     value: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.number,
     ]),
-    recommend: PropTypes.array,
+    recommend: PropTypes.arrayOf(PropTypes.shape({
+      text: PropTypes.string.isRequired,
+      value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    })),
     onChange: PropTypes.func,
     children: PropTypes.func,
   }
 
   static defaultProps = {
     value: undefined,
+    customLabelField: 'name',
+    customeValueField: 'id',
     recommend: [],
     onChange: () => {},
     children: option => <Option key={option.value} value={option.value || ''}>{option.text}</Option>,
@@ -55,7 +62,7 @@ export default class XSelect extends PureComponent {
   }
 
   fetchData = (value = '', cb = null) => {
-    const { remoteUrl = '', customLabelField = 'name', customeValueField = 'id' } = this.props;
+    const { remoteUrl = '', customLabelField, customeValueField } = this.props;
 
     if (remoteUrl) {
       this.setState({ data: [], fetching: true });
