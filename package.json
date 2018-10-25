@@ -1,6 +1,6 @@
 {
   "name": "selectx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Fetch remote data Select component base on Antd Select component.",
   "main": "lib/index.js",
   "scripts": {
