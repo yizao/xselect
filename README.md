@@ -1,4 +1,4 @@
-# XSelect
+# selectx
 基于 Antd Select 组件封装，可使表单组件变成 Modal Form Component, XSelect 所有的属性同原Antd Select 属性。
 
 ## 📦 安装
