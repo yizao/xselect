@@ -1,5 +1,5 @@
 # selectx
-基于 Antd Select 组件封装，可使表单组件变成 Modal Form Component, XSelect 所有的属性同原Antd [Select](https://ant.design/components/select-cn/) 属性。
+基于 Antd Select 组件封装，可根据搜索值请求远程接口获取数据, XSelect 所有的属性同原Antd [Select](https://ant.design/components/select-cn/) 属性。
 
 ## 📦 安装
 ```bash
